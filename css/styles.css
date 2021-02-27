@@ -30,6 +30,7 @@ body {
 
 .link {
   text-decoration: none;
+  color: inherit;
 }
 .address {
   font-style: normal;
@@ -119,7 +120,7 @@ footer {
 /*============== HERO =================*/
 
 .hero-section {
-  background-color: #2f303a;
+  background-color: #2f303a; /*временный фон*/
 }
 
 .hero-title {
