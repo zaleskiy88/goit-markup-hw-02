@@ -15,11 +15,11 @@ accent color #2196F3
   --secondary-font: "raleway", sans-serif;
   --accent-color: #2196f3;
   --title-color: #212121;
-  --text-description-color: #757575;
-  --header-background-color: #fff;
-  --footer-background-color: #2f303a;
+  --text-color: #757575;
+  --secondary-text-color: rgba(255, 255, 255, 0.6);
+  --background-color: #fff;
   --secondary-background-color: #f5f4fa;
-  --button-hover-color: #fff;
+  --footer-background-color: #2f303a;
 }
 
 body {
@@ -68,7 +68,7 @@ body {
 
 .text-desc {
   letter-spacing: 0.03em;
-  color: var(--text-description-color);
+  color: var(--text-color);
 }
 
 /*============  end components =============*/
@@ -76,12 +76,12 @@ body {
 /*============== HEADER ==============*/
 
 header {
-  background-color: var(--header-background-color);
+  background-color: var(--background-color);
 }
 
 .site-nav-item,
 .our-contact {
-  font-weight: 500;
+  
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -96,7 +96,10 @@ header {
 }
 
 .our-contact {
-  color: var(--text-description-color);
+  color: var(--text-color);
+}
+.in-header {
+ font-weight: 500;
 }
 .in-header:hover,
 .in-header:focus {
@@ -109,6 +112,10 @@ footer {
   background-color: var(--footer-background-color);
 }
 
+.in-footer {
+  color: var(--secondary-text-color);
+  font-weight;
+}
 .footer-maps-link {
   font-size: 14px;
   line-height: 1.71;
@@ -212,7 +219,7 @@ footer {
 .filter-button:hover,
 .filter-button:focus {
   background-color: var(--accent-color);
-  color: var(--button-hover-color);
+  color: var(--background-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
